@@ -23,7 +23,7 @@ O símbolo é uma pirâmide desenhada em linha, com a aresta central visível. P
 - **Base sólida:** a aprendizagem constrói-se de baixo para cima, com fundamentos firmes.
 - **Chegar ao topo:** o caminho até ao objetivo (o exame, a nota) é feito degrau a degrau.
 
-Na assinatura, *easy* aparece a preto e *mat* em azul. A cor destaca a Matemática como o centro da marca.
+Na assinatura, *easy* aparece em azul-tinta (um azul quase preto) e *mat* em azul. A cor destaca a Matemática como o centro da marca.
 
 Regras de utilização:
 
@@ -31,7 +31,7 @@ Regras de utilização:
 - Não inclinar, esticar, rodar, redesenhar, mudar as cores, aplicar sombras ou contornos.
 - Não separar a assinatura da pirâmide nem mudar a ordem ou a cor das palavras.
 - Tamanho mínimo recomendado: 120 px de largura em digital e 25 mm em impressão. Abaixo disso, usar apenas o símbolo (quando existir).
-- Em fundos escuros ou fotografias, colocar o logótipo sobre uma área branca ou preparar a versão branca antes de publicar. Nunca usar o logótipo azul e preto diretamente sobre azul-noite.
+- Em fundos escuros ou fotografias, colocar o logótipo sobre uma área branca ou preparar a versão branca antes de publicar. Nunca usar o logótipo a cores diretamente sobre azul-noite.
 
 ## Paleta de cores
 
@@ -40,7 +40,7 @@ Regras de utilização:
 | Cor | HEX | Utilização |
 | --- | --- | --- |
 | Azul easy mat | `#0049AF` | Cor da marca, igual à do logótipo. Títulos de destaque, ações, links, ícones e elementos-chave. Contraste de cerca de 8:1 sobre branco, por isso pode ser usado em texto. |
-| Preto | `#000000` | Exclusivo do logótipo (*easy*). |
+| Azul-tinta | `#0B1730` | Exclusivo do logótipo (*easy*). Substitui o preto puro. |
 | Azul-noite | `#0A1F44` | Fundos escuros, cabeçalhos e peças institucionais. É a cor que mais transmite prestígio e autoridade. |
 | Branco | `#FFFFFF` | Fundo principal: limpo, como uma folha de exercícios. |
 
