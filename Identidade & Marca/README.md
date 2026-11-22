@@ -14,10 +14,11 @@ Estas duas ideias não se contradizem. A facilidade vem do domínio do assunto: 
 ## Logótipo
 
 - `logo_atual.svg` — logótipo completo (pirâmide + assinatura *easy mat*), para fundos claros. Vetorial: mantém-se nítido em qualquer tamanho.
+- `logo_atual.png` — o mesmo logótipo em imagem (8464 × 9568 px, fundo branco), para ferramentas que não aceitem SVG.
 - *A criar:* versão só com o símbolo (pirâmide isolada), para avatares, favicons e espaços pequenos.
 - *A criar:* versão monocromática e versão branca, para fundos escuros, impressão a uma cor ou suportes que não permitam cores.
 
-O símbolo é uma pirâmide desenhada em linha, com a aresta central visível. Pode ser lido de várias formas:
+O símbolo é uma pirâmide desenhada em linha, com a aresta central visível. As arestas da base encontram-se num vértice inferior, por baixo da aresta central, e os três vértices da base (os dois laterais e o inferior) têm o mesmo arredondamento ligeiro. Pode ser lido de várias formas:
 
 - **Geometria e rigor:** um sólido geométrico, reconhecível por qualquer aluno.
 - **Base sólida:** a aprendizagem constrói-se de baixo para cima, com fundamentos firmes.
@@ -139,6 +140,6 @@ Formatos de conteúdo que reforçam as duas mensagens:
 
 ## Referências no projeto
 
-- Logótipo atual: `Identidade & Marca/logo_atual.svg`.
+- Logótipo atual: `Identidade & Marca/logo_atual.svg` (vetorial) e `Identidade & Marca/logo_atual.png` (imagem).
 - Roteiro da marca (decisões e próximos passos): `Tópicos Easy Mat/topicos_easymat.pdf`.
 - Página atual: facebook.com/explicacoes.matematica.armacao.de.pera.e.online
