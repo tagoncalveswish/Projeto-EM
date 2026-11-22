@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- EDITAR: título que aparece no separador do browser e no Google (até ~60 caracteres) -->
+  <title>easy mat | Explicações de Matemática no Algarve</title>
+  <!-- EDITAR: descrição que aparece no Google por baixo do título (até ~155 caracteres) -->
+  <meta name="description" content="Explicações de Matemática no Algarve, presenciais e online, do 7.º ao 12.º ano. Preparação para a prova final do 9.º ano e para o exame nacional de MACS.">
+  <meta name="theme-color" content="#0049AF">
+
+  <!-- EDITAR: depois de publicar, trocar "UTILIZADOR" e "REPOSITORIO" pelo endereço real do site
+       (aqui, em og:url, em og:image e nos dados estruturados mais abaixo) -->
+  <link rel="canonical" href="https://UTILIZADOR.github.io/REPOSITORIO/">
+
+  <!-- Pré-visualização quando o link é partilhado no Facebook, WhatsApp, etc. (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:site_name" content="easy mat">
+  <meta property="og:title" content="easy mat | Explicações de Matemática no Algarve">
+  <meta property="og:description" content="Matemática sem medo. Explicações presenciais e online, do 7.º ao 12.º ano, com preparação para a prova final do 9.º ano e para os exames nacionais.">
+  <meta property="og:url" content="https://UTILIZADOR.github.io/REPOSITORIO/">
+  <meta property="og:image" content="https://UTILIZADOR.github.io/REPOSITORIO/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logótipo da easy mat, explicações de Matemática no Algarve">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Ícones do separador do browser e do ecrã principal do telemóvel -->
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <!-- Tipos de letra (Google Fonts): Montserrat nos títulos, Inter no texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+
+  <!-- Dados estruturados para o Google (schema.org).
+       EDITAR: telefone, email, Instagram e endereço do site. Se quiser mostrar a morada completa,
+       acrescentar "streetAddress", "postalCode" e "addressLocality" dentro de "address". -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["EducationalOrganization", "LocalBusiness"],
+    "name": "easy mat",
+    "description": "Explicações de Matemática presenciais e online no Algarve, do 7.º ao 12.º ano, com preparação para a prova final do 9.º ano e para os exames nacionais de MACS e Matemática A.",
+    "url": "https://UTILIZADOR.github.io/REPOSITORIO/",
+    "logo": "https://UTILIZADOR.github.io/REPOSITORIO/img/logo.png",
+    "image": "https://UTILIZADOR.github.io/REPOSITORIO/img/og-image.png",
+    "telephone": "+351XXXXXXXXX",
+    "email": "email@example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Algarve",
+      "addressCountry": "PT"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Algarve"
+    },
+    "sameAs": [
+      "https://www.facebook.com/explicacoes.matematica.armacao.de.pera.e.online",
+      "https://www.instagram.com/SUBSTITUIR"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- Ícones usados no site (não é preciso editar) -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-aluno" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-grupo" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-local" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-ecra" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></symbol>
+    <symbol id="i-documento" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+    <symbol id="i-livro" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-mensagem" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+    <symbol id="i-telefone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-email" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-externo" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+  </svg>
+
+  <!-- ===================== CABEÇALHO E MENU ===================== -->
+  <header class="cabecalho">
+    <div class="contentor cabecalho__barra">
+      <a class="marca" href="#inicio">
+        <!-- Símbolo da marca (img/simbolo.svg) -->
+        <img src="img/simbolo.svg" alt="easy mat — início" width="43" height="40">
+      </a>
+
+      <nav class="navegacao" aria-label="Menu principal">
+        <ul class="menu" id="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#explicacoes">Explicações</a></li>
+          <li><a href="#exames">Exames</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#testemunhos">Testemunhos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a class="botao botao--pequeno cabecalho__cta" href="#contacto" data-assunto="Aula experimental">Marcar aula</a>
+
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== 1. INÍCIO ===================== -->
+    <section class="heroi" id="inicio" aria-labelledby="heroi-titulo">
+      <div class="contentor heroi__grelha">
+        <div class="heroi__texto">
+          <!-- EDITAR: textos da entrada do site -->
+          <p class="sobretitulo">Explicações de Matemática · <span class="sem-quebra">Algarve e online</span></p>
+          <h1 id="heroi-titulo">Matemática <span class="destaque">sem medo</span></h1>
+          <p class="heroi__lead">A Matemática fica fácil quando é bem explicada. Acompanhamos cada aluno passo a passo, do 7.º ao 12.º ano, até ao dia do exame.</p>
+
+          <div class="heroi__acoes">
+            <a class="botao" href="#contacto" data-assunto="Aula experimental">Marcar aula experimental</a>
+            <a class="botao botao--contorno" href="#explicacoes">Ver explicações</a>
+          </div>
+
+          <ul class="heroi__pontos">
+            <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Aulas presenciais e online</li>
+            <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Do 7.º ao 12.º ano</li>
+            <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Prova final do 9.º ano e exames nacionais</li>
+          </ul>
+        </div>
+
+        <div class="heroi__logo">
+          <!-- EDITAR: logótipo. Para trocar, substituir o ficheiro img/logo.png por outro com o mesmo nome. -->
+          <img src="img/logo.png" alt="Logótipo easy mat: pirâmide azul com o nome easy mat" width="600" height="678" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. EXPLICAÇÕES ===================== -->
+    <section class="seccao seccao--clara" id="explicacoes" aria-labelledby="explicacoes-titulo">
+      <div class="contentor">
+        <header class="seccao__cabecalho">
+          <p class="sobretitulo">Explicações</p>
+          <h2 id="explicacoes-titulo">Explicações à medida de cada aluno</h2>
+          <p class="seccao__intro">Do 3.º ciclo ao secundário, com um plano adaptado ao ritmo e aos objetivos de cada um: recuperar matéria, consolidar as bases ou preparar um exame.</p>
+        </header>
+
+        <!-- EDITAR: níveis de ensino (um cartão por nível) -->
+        <div class="grelha grelha--4">
+          <article class="cartao nivel">
+            <p class="etiqueta">7.º, 8.º e 9.º anos</p>
+            <h3>3.º ciclo</h3>
+            <p>Consolidar as bases (números, álgebra, geometria e funções) para chegar ao secundário com confiança.</p>
+          </article>
+          <article class="cartao nivel">
+            <p class="etiqueta">9.º ano</p>
+            <h3>Prova final do 9.º ano</h3>
+            <p>Revisão de toda a matéria do 3.º ciclo e treino com provas de anos anteriores, com correção detalhada.</p>
+          </article>
+          <article class="cartao nivel">
+            <p class="etiqueta">Secundário · 10.º ao 12.º ano</p>
+            <h3>Matemática A</h3>
+            <p>Acompanhamento ao longo do ano e preparação para o exame nacional, com rigor na resolução e na notação.</p>
+          </article>
+          <article class="cartao nivel">
+            <p class="etiqueta">Secundário · 10.º e 11.º anos</p>
+            <h3>MACS</h3>
+            <p>Matemática Aplicada às Ciências Sociais, com foco na interpretação dos problemas e no exame nacional.</p>
+          </article>
+        </div>
+
+        <!-- EDITAR: formatos das aulas -->
+        <h3 class="subtitulo">Formatos de aula</h3>
+        <ul class="formatos">
+          <li class="formato">
+            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-aluno"/></svg></span>
+            <div>
+              <h4>Individual</h4>
+              <p>Só o aluno e o explicador: o ritmo, as dúvidas e os objetivos são os dele.</p>
+            </div>
+          </li>
+          <li class="formato">
+            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-grupo"/></svg></span>
+            <div>
+              <h4>Em grupo</h4>
+              <p>Grupos pequenos e do mesmo nível, para aprender também com as dúvidas dos colegas.</p>
+            </div>
+          </li>
+          <li class="formato">
+            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-local"/></svg></span>
+            <div>
+              <h4>Presencial</h4>
+              <!-- EDITAR: localidade do centro de explicações -->
+              <p>No nosso centro de explicações, no Algarve.</p>
+            </div>
+          </li>
+          <li class="formato">
+            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-ecra"/></svg></span>
+            <div>
+              <h4>Online</h4>
+              <p>Por videochamada, a partir de casa. Ideal para quem vive mais longe ou tem horários apertados.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 3. PREPARAÇÃO PARA EXAMES ===================== -->
+    <section class="seccao seccao--escura" id="exames" aria-labelledby="exames-titulo">
+      <div class="contentor">
+        <header class="seccao__cabecalho">
+          <p class="sobretitulo">Preparação para exames</p>
+          <h2 id="exames-titulo">Chegar ao exame preparado, sem surpresas</h2>
+          <p class="seccao__intro">Os exames treinam-se. Trabalhamos a matéria, o tipo de pergunta e a gestão do tempo, para que o aluno chegue ao dia da prova seguro do que sabe.</p>
+        </header>
+
+        <!-- EDITAR: exames em destaque -->
+        <div class="grelha grelha--2">
+          <article class="exame">
+            <p class="exame__selo">Exame nacional · 11.º ano</p>
+            <h3>MACS</h3>
+            <p class="exame__sub">Matemática Aplicada às Ciências Sociais</p>
+            <ul class="lista-check">
+              <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Revisão organizada da matéria do 10.º e do 11.º ano</li>
+              <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Resolução de exames de anos anteriores, seguindo os critérios de correção</li>
+              <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Simulações com tempo real, corrigidas e comentadas</li>
+            </ul>
+            <a class="botao botao--claro" href="#contacto" data-assunto="Preparação para exame">Preparar o exame de MACS</a>
+          </article>
+
+          <article class="exame">
+            <p class="exame__selo">Prova final · 9.º ano</p>
+            <h3>Matemática do 9.º ano</h3>
+            <p class="exame__sub">Prova final do 3.º ciclo</p>
+            <ul class="lista-check">
+              <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Revisão dos temas do 7.º ao 9.º ano</li>
+              <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Treino com provas anteriores e questões-tipo</li>
+              <li><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg>Estratégias para gerir o tempo e evitar erros comuns</li>
+            </ul>
+            <a class="botao botao--claro" href="#contacto" data-assunto="Preparação para exame">Preparar a prova do 9.º ano</a>
+          </article>
+        </div>
+
+        <p class="exames__nota">Também preparamos alunos para o exame nacional de Matemática A, no 12.º ano.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 4. RECURSOS E CURSOS ONLINE ===================== -->
+    <section class="seccao" id="recursos" aria-labelledby="recursos-titulo">
+      <div class="contentor">
+        <header class="seccao__cabecalho">
+          <p class="sobretitulo">Recursos e cursos online</p>
+          <h2 id="recursos-titulo">Estudar ao seu ritmo, onde estiver</h2>
+          <p class="seccao__intro">Estamos a preparar cursos e exames resolvidos em vídeo, explicados passo a passo, para rever a matéria quando e onde quiser.</p>
+        </header>
+
+        <!-- EDITAR: cursos. Quando um curso estiver disponível, trocar o link do botão pelo link da Hotmart
+             (ou de outra plataforma) e mudar a etiqueta "Em breve". -->
+        <div class="grelha grelha--3">
+          <article class="cartao recurso">
+            <div class="recurso__topo">
+              <span class="recurso__icone"><svg class="icone" aria-hidden="true"><use href="#i-video"/></svg></span>
+              <span class="selo-breve">Em breve</span>
+            </div>
+            <h3>Exames de MACS resolvidos</h3>
+            <p>Exames nacionais de anos anteriores resolvidos em vídeo, com cada passo explicado e os critérios de correção.</p>
+            <a class="botao botao--contorno" href="https://hotmart.com/#SUBSTITUIR-curso-macs" target="_blank" rel="noopener">Saber mais <svg class="icone" aria-hidden="true"><use href="#i-externo"/></svg><span class="visualmente-oculto"> (abre noutro separador)</span></a>
+          </article>
+
+          <article class="cartao recurso">
+            <div class="recurso__topo">
+              <span class="recurso__icone"><svg class="icone" aria-hidden="true"><use href="#i-documento"/></svg></span>
+              <span class="selo-breve">Em breve</span>
+            </div>
+            <h3>Prova final do 9.º ano resolvida</h3>
+            <p>As questões das provas anteriores resolvidas e comentadas, com dicas para evitar os erros mais comuns.</p>
+            <a class="botao botao--contorno" href="https://hotmart.com/#SUBSTITUIR-curso-9-ano" target="_blank" rel="noopener">Saber mais <svg class="icone" aria-hidden="true"><use href="#i-externo"/></svg><span class="visualmente-oculto"> (abre noutro separador)</span></a>
+          </article>
+
+          <article class="cartao recurso">
+            <div class="recurso__topo">
+              <span class="recurso__icone"><svg class="icone" aria-hidden="true"><use href="#i-livro"/></svg></span>
+              <span class="selo-breve">Em breve</span>
+            </div>
+            <h3>Curso intensivo de revisões</h3>
+            <p>Revisão da matéria essencial antes do exame, organizada por temas e com exercícios para praticar.</p>
+            <a class="botao botao--contorno" href="https://hotmart.com/#SUBSTITUIR-curso-intensivo" target="_blank" rel="noopener">Saber mais <svg class="icone" aria-hidden="true"><use href="#i-externo"/></svg><span class="visualmente-oculto"> (abre noutro separador)</span></a>
+          </article>
+        </div>
+
+        <p class="recursos__aviso">Quer ser avisado quando estiverem disponíveis? <a href="#contacto" data-assunto="Cursos online">Deixe o seu contacto</a>.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 5. TESTEMUNHOS ===================== -->
+    <section class="seccao seccao--clara" id="testemunhos" aria-labelledby="testemunhos-titulo">
+      <div class="contentor">
+        <header class="seccao__cabecalho">
+          <p class="sobretitulo">Testemunhos</p>
+          <h2 id="testemunhos-titulo">O que dizem alunos e pais</h2>
+          <!-- EDITAR: apagar este aviso quando os testemunhos forem reais -->
+          <p class="seccao__intro">Exemplos ilustrativos, a substituir por testemunhos reais de alunos e encarregados de educação.</p>
+        </header>
+
+        <!-- EDITAR: substituir os 3 exemplos por testemunhos reais, com autorização
+             (no caso de menores, dos encarregados de educação), e apagar as etiquetas "Exemplo". -->
+        <div class="grelha grelha--3">
+          <figure class="cartao testemunho">
+            <span class="testemunho__exemplo">Exemplo</span>
+            <blockquote>
+              <p>«As funções nunca me tinham feito sentido. Com exercícios passo a passo, finalmente percebi a matéria e deixei de ter medo dos testes.»</p>
+            </blockquote>
+            <figcaption class="testemunho__autor"><strong>Nome do aluno</strong><span>11.º ano, MACS</span></figcaption>
+          </figure>
+
+          <figure class="cartao testemunho">
+            <span class="testemunho__exemplo">Exemplo</span>
+            <blockquote>
+              <p>«Notámos diferença na confiança do nosso filho logo nas primeiras semanas. O acompanhamento é próximo e muito organizado.»</p>
+            </blockquote>
+            <figcaption class="testemunho__autor"><strong>Nome do encarregado de educação</strong><span>Pai de um aluno do 8.º ano</span></figcaption>
+          </figure>
+
+          <figure class="cartao testemunho">
+            <span class="testemunho__exemplo">Exemplo</span>
+            <blockquote>
+              <p>«Treinar com provas anteriores deixou-me muito mais tranquila no dia da prova final. Já sabia o que esperar.»</p>
+            </blockquote>
+            <figcaption class="testemunho__autor"><strong>Nome da aluna</strong><span>9.º ano</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. CONTACTO ===================== -->
+    <section class="seccao" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="contentor">
+        <header class="seccao__cabecalho">
+          <p class="sobretitulo">Contacto</p>
+          <h2 id="contacto-titulo">Fale connosco</h2>
+          <p class="seccao__intro">Marque uma aula experimental ou envie as suas dúvidas. Respondemos com a maior brevidade possível.</p>
+        </header>
+
+        <div class="contacto">
+          <!-- EDITAR: trocar "SUBSTITUIR" pelo código do formulário do Formspree (ver README) -->
+          <form class="cartao formulario" action="https://formspree.io/f/SUBSTITUIR" method="POST">
+            <h3 class="formulario__titulo">Envie-nos uma mensagem</h3>
+
+            <input type="hidden" name="_subject" value="Novo pedido pelo site easy mat">
+            <!-- Proteção contra spam: este campo fica escondido e deve ficar vazio -->
+            <div class="campo--oculto" aria-hidden="true">
+              <label for="f-gotcha">Não preencher</label>
+              <input id="f-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="campos-2">
+              <div class="campo">
+                <label for="f-nome">Nome</label>
+                <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+              </div>
+              <div class="campo">
+                <label for="f-telefone">Telefone <span class="opcional">(opcional)</span></label>
+                <input id="f-telefone" name="telefone" type="tel" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="campos-2">
+              <div class="campo">
+                <label for="f-assunto">Assunto</label>
+                <select id="f-assunto" name="assunto">
+                  <option value="Aula experimental" selected>Aula experimental</option>
+                  <option value="Explicações regulares">Explicações regulares</option>
+                  <option value="Preparação para exame">Preparação para exame</option>
+                  <option value="Cursos online">Cursos online</option>
+                  <option value="Outro assunto">Outro assunto</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="f-ano">Ano de escolaridade</label>
+                <select id="f-ano" name="ano">
+                  <option value="">Escolher…</option>
+                  <option>7.º ano</option>
+                  <option>8.º ano</option>
+                  <option>9.º ano</option>
+                  <option>10.º ano</option>
+                  <option>11.º ano</option>
+                  <option>12.º ano</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="f-mensagem">Mensagem</label>
+              <textarea id="f-mensagem" name="mensagem" rows="5" placeholder="Por exemplo: disciplina, principais dificuldades, horários preferidos…"></textarea>
+            </div>
+
+            <div class="campo campo--check">
+              <input id="f-consentimento" name="consentimento" type="checkbox" value="Sim" required>
+              <label for="f-consentimento">Aceito que os meus dados sejam usados apenas para responder a este pedido.</label>
+            </div>
+
+            <button class="botao botao--largo" type="submit">Enviar pedido</button>
+            <p class="formulario__estado" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contacto__info">
+            <!-- EDITAR: número de WhatsApp (formato 351 + número, sem espaços nem "+") -->
+            <a class="botao botao--whatsapp botao--largo" href="https://wa.me/351XXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20explica%C3%A7%C3%B5es%20de%20Matem%C3%A1tica." target="_blank" rel="noopener">
+              <svg class="icone" aria-hidden="true"><use href="#i-mensagem"/></svg>Falar pelo WhatsApp
+            </a>
+
+            <!-- EDITAR: telefone, email e zona -->
+            <ul class="contactos">
+              <li>
+                <svg class="icone" aria-hidden="true"><use href="#i-telefone"/></svg>
+                <div><span class="contactos__rotulo">Telefone</span><a href="tel:+351XXXXXXXXX">+351 XXX XXX XXX</a></div>
+              </li>
+              <li>
+                <svg class="icone" aria-hidden="true"><use href="#i-email"/></svg>
+                <div><span class="contactos__rotulo">Email</span><a href="mailto:email@example.com">email@example.com</a></div>
+              </li>
+              <li>
+                <svg class="icone" aria-hidden="true"><use href="#i-local"/></svg>
+                <div><span class="contactos__rotulo">Onde</span><strong>Algarve · aulas presenciais e online</strong></div>
+              </li>
+            </ul>
+
+            <!-- EDITAR: links das redes sociais -->
+            <div class="redes">
+              <a href="https://www.facebook.com/explicacoes.matematica.armacao.de.pera.e.online" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a>
+              <a href="https://www.instagram.com/SUBSTITUIR" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram</a>
+            </div>
+
+            <!-- EDITAR: mapa. Para mostrar a morada exata: Google Maps → Partilhar → Incorporar um mapa,
+                 e copiar para aqui o endereço que aparece dentro de src="..." -->
+            <div class="mapa">
+              <iframe src="https://maps.google.com/maps?q=Algarve%2C%20Portugal&amp;z=9&amp;output=embed" title="Mapa da região do Algarve" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="contentor rodape__grelha">
+      <div>
+        <p class="rodape__marca">easy mat</p>
+        <p>Explicações de Matemática presenciais e online, no Algarve.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <p class="rodape__titulo">Navegação</p>
+        <ul class="rodape__lista">
+          <li><a href="#explicacoes">Explicações</a></li>
+          <li><a href="#exames">Preparação para exames</a></li>
+          <li><a href="#recursos">Recursos online</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="rodape__titulo">Contactos</p>
+        <!-- EDITAR: os mesmos contactos da secção Contacto -->
+        <ul class="rodape__lista">
+          <li><a href="https://wa.me/351XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:email@example.com">email@example.com</a></li>
+          <li><a href="https://www.facebook.com/explicacoes.matematica.armacao.de.pera.e.online" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/SUBSTITUIR" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contentor rodape__base">
+      <p>© <span data-ano>2026</span> easy mat. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp. EDITAR: número (igual ao da secção Contacto) -->
+  <a class="whatsapp-flutuante" href="https://wa.me/351XXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20explica%C3%A7%C3%B5es%20de%20Matem%C3%A1tica." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <svg class="icone" aria-hidden="true"><use href="#i-mensagem"/></svg>
+  </a>
+</body>
+</html>
