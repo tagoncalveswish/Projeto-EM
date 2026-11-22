@@ -15,8 +15,9 @@ Estas duas ideias não se contradizem. A facilidade vem do domínio do assunto: 
 
 - `logo_atual.svg` — logótipo completo (pirâmide + assinatura *easy mat*), para fundos claros. Vetorial: mantém-se nítido em qualquer tamanho.
 - `logo_atual.png` — o mesmo logótipo em imagem (8464 × 9568 px, fundo branco), para ferramentas que não aceitem SVG.
-- *A criar:* versão só com o símbolo (pirâmide isolada), para avatares, favicons e espaços pequenos.
-- *A criar:* versão monocromática e versão branca, para fundos escuros, impressão a uma cor ou suportes que não permitam cores.
+- `logo-simbolo.svg` / `logo-simbolo.png` — só o símbolo (pirâmide isolada, em azul easy mat), para avatares, favicons e espaços pequenos. PNG com 8448 × 7904 px e fundo branco.
+- `logo-simbolo-monocromatico.svg` / `logo-simbolo-monocromatico.png` — o símbolo a preto (`#000000`), para impressão a uma cor ou suportes que não permitam cores. PNG com 8448 × 7904 px e fundo branco.
+- *A criar:* versão branca, para fundos escuros.
 
 O símbolo é uma pirâmide desenhada em linha, com a aresta central visível. As arestas da base encontram-se num vértice inferior, por baixo da aresta central, e os três vértices da base (os dois laterais e o inferior) têm o mesmo arredondamento ligeiro. Pode ser lido de várias formas:
 
@@ -31,7 +32,7 @@ Regras de utilização:
 - Preservar proporções, cores e espaço livre à volta do logótipo. O espaço livre mínimo é a largura da barra central da pirâmide multiplicada por quatro, em todos os lados.
 - Não inclinar, esticar, rodar, redesenhar, mudar as cores, aplicar sombras ou contornos.
 - Não separar a assinatura da pirâmide nem mudar a ordem ou a cor das palavras.
-- Tamanho mínimo recomendado: 120 px de largura em digital e 25 mm em impressão. Abaixo disso, usar apenas o símbolo (quando existir).
+- Tamanho mínimo recomendado: 120 px de largura em digital e 25 mm em impressão. Abaixo disso, usar apenas o símbolo (`logo-simbolo.svg`).
 - Em fundos escuros ou fotografias, colocar o logótipo sobre uma área branca ou preparar a versão branca antes de publicar. Nunca usar o logótipo a cores diretamente sobre azul-noite.
 
 ## Paleta de cores
@@ -141,5 +142,6 @@ Formatos de conteúdo que reforçam as duas mensagens:
 ## Referências no projeto
 
 - Logótipo atual: `Identidade & Marca/logo_atual.svg` (vetorial) e `Identidade & Marca/logo_atual.png` (imagem).
+- Símbolo: `Identidade & Marca/logo-simbolo.svg` e `.png`; versão monocromática em `Identidade & Marca/logo-simbolo-monocromatico.svg` e `.png`.
 - Roteiro da marca (decisões e próximos passos): `Tópicos Easy Mat/topicos_easymat.pdf`.
 - Página atual: facebook.com/explicacoes.matematica.armacao.de.pera.e.online
