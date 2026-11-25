@@ -860,61 +860,7 @@ a:hover {
   }
 }
 
-/* ---------- 4. Recursos online ---------- */
-.recurso {
-  display: flex;
-  flex-direction: column;
-}
-
-.recurso__topo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.1rem;
-}
-
-.recurso__icone {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: var(--giz);
-  color: var(--azul);
-}
-
-.recurso__icone .icone {
-  width: 24px;
-  height: 24px;
-}
-
-.selo-breve {
-  padding: 0.25rem 0.65rem;
-  border: 1px solid var(--linha);
-  border-radius: 999px;
-  background: var(--claro);
-  color: var(--ardosia);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.recurso p {
-  color: var(--ardosia);
-}
-
-.recurso .botao {
-  align-self: flex-start;
-  margin-top: auto;
-}
-
-.recursos__aviso {
-  margin: 2rem 0 0;
-  text-align: center;
-}
-
-/* ---------- 5. Testemunhos ---------- */
+/* ---------- 4. Testemunhos ---------- */
 .testemunho {
   display: flex;
   flex-direction: column;
@@ -961,7 +907,7 @@ a:hover {
   color: var(--ardosia);
 }
 
-/* ---------- 6. Contacto ---------- */
+/* ---------- 5. Contacto ---------- */
 .contacto {
   display: grid;
   gap: 2rem;

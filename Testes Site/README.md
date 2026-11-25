@@ -57,7 +57,6 @@ Os contactos estão em vários sítios da página. Para os trocar todos de uma v
 | `https://www.instagram.com/SUBSTITUIR` | Link da página de Instagram. |
 | `https://formspree.io/f/SUBSTITUIR` | Endereço do formulário no Formspree (ver abaixo). |
 | `https://UTILIZADOR.github.io/REPOSITORIO/` | Endereço final do site, depois de publicado (ver abaixo). |
-| `https://hotmart.com/#SUBSTITUIR-...` | Link de cada curso, quando existir (ver abaixo). |
 
 O link do Facebook já é o da página atual.
 
@@ -87,13 +86,6 @@ O mapa mostra a região do Algarve. Para mostrar a morada exata:
 1. No Google Maps, procurar a morada e carregar em **Partilhar → Incorporar um mapa → Copiar HTML**.
 2. Do código copiado, ficar só com o endereço que está dentro de `src="..."`.
 3. No `index.html`, colá-lo no `src` do `<iframe>` do mapa (está assinalado com `EDITAR`).
-
-## Cursos online (Hotmart)
-
-Na secção **Recursos**, cada cartão tem um botão "Saber mais". Quando um curso ficar disponível:
-
-1. Trocar o link do botão (`https://hotmart.com/#SUBSTITUIR-...`) pelo link do produto na Hotmart ou noutra plataforma.
-2. Trocar a etiqueta "Em breve" por "Disponível", ou apagá-la.
 
 ## Testemunhos
 
