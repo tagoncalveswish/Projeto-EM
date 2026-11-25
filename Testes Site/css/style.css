@@ -848,12 +848,6 @@ a:hover {
   margin-top: auto;
 }
 
-.exames__nota {
-  margin: 2rem 0 0;
-  text-align: center;
-  color: var(--texto-escuro);
-}
-
 @media (min-width: 768px) {
   .exame {
     padding: 2.5rem 2.25rem 2.25rem;
