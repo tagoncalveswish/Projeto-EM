@@ -100,7 +100,7 @@
         <ul class="menu" id="menu">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#aulas-presenciais">Aulas Presenciais</a></li>
-          <li><a href="#explicacoes">Explicações</a></li>
+          <li><a href="#aulas-online">Aulas Online</a></li>
           <li><a href="#exames">Exames</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#contacto">Contacto</a></li>
@@ -128,7 +128,7 @@
 
           <div class="heroi__acoes">
             <a class="botao" href="#contacto" data-assunto="Aula experimental">Marcar aula experimental</a>
-            <a class="botao botao--contorno" href="#explicacoes">Ver explicações</a>
+            <a class="botao botao--contorno" href="#aulas-presenciais">Ver explicações</a>
           </div>
 
           <ul class="heroi__pontos">
@@ -146,22 +146,22 @@
     </section>
 
     <!-- ===================== 2. AULAS PRESENCIAIS ===================== -->
-    <section class="seccao presenciais" id="aulas-presenciais" aria-labelledby="presenciais-titulo">
-      <div class="contentor presenciais__grelha">
-        <div class="presenciais__texto">
+    <section class="seccao seccao--linha aulas" id="aulas-presenciais" aria-labelledby="presenciais-titulo">
+      <div class="contentor aulas__grelha">
+        <div class="aulas__texto">
           <!-- EDITAR: textos das aulas presenciais -->
           <p class="sobretitulo">Aulas presenciais</p>
           <h2 id="presenciais-titulo">Aulas de Matemática Presenciais em Silves, Faro</h2>
-          <ul class="presenciais__lista">
-            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Grupos pequenos de alunos</li>
-            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Preparação para testes e exames</li>
-            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Ensino Básico: 7.º ao 9.º ano</li>
-            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Ensino Secundário: 10.º ao 12.º ano (Matemática A e MACS)</li>
+          <ul class="aulas__lista">
+            <li><span class="aulas__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Grupos pequenos de alunos</li>
+            <li><span class="aulas__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Preparação para testes e exames</li>
+            <li><span class="aulas__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Ensino Básico: 7.º ao 9.º ano</li>
+            <li><span class="aulas__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Ensino Secundário: 10.º ao 12.º ano (Matemática A e MACS)</li>
           </ul>
           <a class="botao" href="#contacto" data-assunto="Inscrição nas aulas presenciais">Inscrever</a>
         </div>
 
-        <figure class="presenciais__foto">
+        <figure class="aulas__imagem">
           <!-- EDITAR: fotografia da sala. Para trocar, substituir img/sala-aulas-presenciais.jpg
                por outra fotografia vertical (proporção 3 × 4) com o mesmo nome. -->
           <img src="img/sala-aulas-presenciais.jpg" alt="Sala de aulas da easy mat, com mesas brancas, cadeiras azuis, quadro branco e um televisor com o anúncio das explicações de Matemática" width="1200" height="1600" loading="lazy">
@@ -169,72 +169,104 @@
       </div>
     </section>
 
-    <!-- ===================== 3. EXPLICAÇÕES ===================== -->
-    <section class="seccao seccao--clara" id="explicacoes" aria-labelledby="explicacoes-titulo">
-      <div class="contentor">
-        <header class="seccao__cabecalho">
-          <p class="sobretitulo">Explicações</p>
-          <h2 id="explicacoes-titulo">Explicações à medida de cada aluno</h2>
-          <p class="seccao__intro">Do 3.º ciclo ao secundário, com um plano adaptado ao ritmo e aos objetivos de cada um: recuperar matéria, consolidar as bases ou preparar um exame.</p>
-        </header>
-
-        <!-- EDITAR: níveis de ensino (um cartão por nível) -->
-        <div class="grelha grelha--4">
-          <article class="cartao nivel">
-            <p class="etiqueta">7.º, 8.º e 9.º anos</p>
-            <h3>3.º ciclo</h3>
-            <p>Consolidar as bases (números, álgebra, geometria e funções) para chegar ao secundário com confiança.</p>
-          </article>
-          <article class="cartao nivel">
-            <p class="etiqueta">9.º ano</p>
-            <h3>Prova final do 9.º ano</h3>
-            <p>Revisão de toda a matéria do 3.º ciclo e treino com provas de anos anteriores, com correção detalhada.</p>
-          </article>
-          <article class="cartao nivel">
-            <p class="etiqueta">Secundário · 10.º ao 12.º ano</p>
-            <h3>Matemática A</h3>
-            <p>Acompanhamento ao longo do ano e preparação para o exame nacional, com rigor na resolução e na notação.</p>
-          </article>
-          <article class="cartao nivel">
-            <p class="etiqueta">Secundário · 10.º e 11.º anos</p>
-            <h3>MACS</h3>
-            <p>Matemática Aplicada às Ciências Sociais, com foco na interpretação dos problemas e no exame nacional.</p>
-          </article>
+    <!-- ===================== 3. AULAS ONLINE ===================== -->
+    <section class="seccao seccao--clara aulas aulas--invertida" id="aulas-online" aria-labelledby="online-titulo">
+      <div class="contentor aulas__grelha">
+        <div class="aulas__texto">
+          <!-- EDITAR: textos das aulas online -->
+          <p class="sobretitulo">Aulas online</p>
+          <h2 id="online-titulo">Aulas de Matemática Online</h2>
+          <ul class="aulas__lista">
+            <li><span class="aulas__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Aulas Individuais</li>
+            <li><span class="aulas__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Preparação para testes e exames</li>
+            <li><span class="aulas__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Ensino Secundário: 10.º ao 12.º ano (Matemática A e MACS)</li>
+          </ul>
+          <a class="botao" href="#contacto" data-assunto="Aula experimental online">Marcar Aula Experimental</a>
         </div>
 
-        <!-- EDITAR: formatos das aulas -->
-        <h3 class="subtitulo">Formatos de aula</h3>
-        <ul class="formatos">
-          <li class="formato">
-            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-aluno"/></svg></span>
-            <div>
-              <h4>Individual</h4>
-              <p>Só o aluno e o explicador: o ritmo, as dúvidas e os objetivos são os dele.</p>
-            </div>
-          </li>
-          <li class="formato">
-            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-grupo"/></svg></span>
-            <div>
-              <h4>Em grupo</h4>
-              <p>Grupos pequenos e do mesmo nível, para aprender também com as dúvidas dos colegas.</p>
-            </div>
-          </li>
-          <li class="formato">
-            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-local"/></svg></span>
-            <div>
-              <h4>Presencial</h4>
-              <!-- EDITAR: localidade do centro de explicações -->
-              <p>No nosso centro de explicações, no Algarve.</p>
-            </div>
-          </li>
-          <li class="formato">
-            <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="#i-ecra"/></svg></span>
-            <div>
-              <h4>Online</h4>
-              <p>Por videochamada, a partir de casa. Ideal para quem vive mais longe ou tem horários apertados.</p>
-            </div>
-          </li>
-        </ul>
+        <figure class="aulas__imagem aulas__imagem--ilustracao">
+          <!-- Ilustração de uma aula online, desenhada aqui mesmo (não é preciso editar).
+               Para pôr uma fotografia no lugar dela, guardar a foto em img/, apagar todo o bloco <svg> … </svg>
+               e escrever no lugar dele, por exemplo:
+               <img src="img/aulas-online.jpg" alt="Descrição da fotografia" width="1200" height="850" loading="lazy"> -->
+          <svg viewBox="0 0 560 396" width="560" height="396" role="img" aria-label="Ilustração de uma aula online: quadro partilhado com o gráfico de uma função e o vídeo do explicador e do aluno">
+            <defs>
+              <pattern id="quadricula-online" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0V20" fill="none" stroke="#E8EEF6"/>
+              </pattern>
+            </defs>
+
+            <!-- Janela da videochamada -->
+            <rect width="560" height="396" fill="#FFFFFF"/>
+            <rect width="560" height="48" fill="#F5F8FD"/>
+            <rect y="340" width="560" height="56" fill="#F5F8FD"/>
+            <path d="M0 48.5H560M0 339.5H560" stroke="#DCE3EE"/>
+
+            <!-- Barra de cima: símbolo, nome da aula e "Em direto" -->
+            <g transform="translate(22 15) scale(0.0365)">
+              <path fill="#0049AF" fill-rule="evenodd" d="M262.94 4L267.06 4L523.04 364.1A9.5 9.5 0 0 1 519.15 378.29L268.85 489.09A9.5 9.5 0 0 1 261.15 489.09L10.85 378.29A9.5 9.5 0 0 1 6.96 364.1ZM29.18 365.62L252 52.18L252 464.26ZM500.82 365.62L278 52.18L278 464.26Z"/>
+            </g>
+            <text x="52" y="29" font-family="Montserrat, sans-serif" font-size="13" font-weight="600" fill="#0A1F44">Aula online · Matemática A</text>
+            <rect x="456" y="13" width="88" height="22" rx="11" fill="#E6F4EC"/>
+            <circle cx="470" cy="24" r="4" fill="#0F7F43"/>
+            <text x="480" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0F7F43">Em direto</text>
+
+            <!-- Quadro partilhado com o gráfico de f(x) = x² − 6x + 8 -->
+            <rect x="16.5" y="64.5" width="363" height="259" rx="10" fill="url(#quadricula-online)" stroke="#DCE3EE"/>
+            <text x="36" y="98" font-family="Montserrat, sans-serif" font-size="16" font-weight="700" fill="#0A1F44">f(x) = x² − 6x + 8</text>
+            <g fill="none" stroke="#5B6475" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M38 256H262M256 251l6 5-6 5"/>
+              <path d="M56 314V112M51 118l5-6 5 6"/>
+            </g>
+            <path d="M164 120V310" stroke="#9DB9EA" stroke-width="1.5" stroke-dasharray="4 5"/>
+            <path d="M88.5 133.6Q164 450.4 239.5 133.6" fill="none" stroke="#0049AF" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="128" cy="256" r="5" fill="#FFFFFF" stroke="#0049AF" stroke-width="2.5"/>
+            <circle cx="200" cy="256" r="5" fill="#FFFFFF" stroke="#0049AF" stroke-width="2.5"/>
+            <circle cx="164" cy="292" r="5.5" fill="#0049AF"/>
+            <g font-family="Inter, sans-serif" font-weight="600" fill="#5B6475">
+              <text x="256" y="274" font-size="12" font-style="italic">x</text>
+              <text x="64" y="120" font-size="12" font-style="italic">y</text>
+              <text x="115" y="274" font-size="11">2</text>
+              <text x="206" y="274" font-size="11">4</text>
+              <text x="282" y="172" font-size="10" letter-spacing="1">ZEROS</text>
+              <text x="282" y="224" font-size="10" letter-spacing="1">VÉRTICE</text>
+            </g>
+            <g font-family="Inter, sans-serif" font-weight="600" fill="#0A1F44">
+              <text x="174" y="310" font-size="12">V</text>
+              <text x="282" y="190" font-size="13">x = 2 e x = 4</text>
+              <text x="282" y="242" font-size="13">V(3, −1)</text>
+            </g>
+
+            <!-- Vídeos do explicador (a falar) e do aluno -->
+            <rect x="392" y="64" width="152" height="124" rx="10" fill="#DCE7FA"/>
+            <circle cx="468" cy="116" r="18" fill="#7FA3E6"/>
+            <path d="M430 188c0-28 17-46 38-46s38 18 38 46z" fill="#7FA3E6"/>
+            <rect x="393.25" y="65.25" width="149.5" height="121.5" rx="8.75" fill="none" stroke="#0049AF" stroke-width="2.5"/>
+            <rect x="392" y="200" width="152" height="124" rx="10" fill="#EEF2F8"/>
+            <circle cx="468" cy="252" r="18" fill="#B5BFCE"/>
+            <path d="M430 324c0-28 17-46 38-46s38 18 38 46z" fill="#B5BFCE"/>
+            <g font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#FFFFFF">
+              <rect x="400" y="160" width="72" height="20" rx="10" fill="#0A1F44" fill-opacity="0.75"/>
+              <text x="409" y="174">Explicador</text>
+              <rect x="400" y="296" width="50" height="20" rx="10" fill="#0A1F44" fill-opacity="0.75"/>
+              <text x="409" y="310">Aluno</text>
+            </g>
+
+            <!-- Botões da chamada: participantes, partilhar ecrã, mensagens e desligar -->
+            <g fill="#FFFFFF" stroke="#DCE3EE">
+              <circle cx="210" cy="368" r="15"/>
+              <circle cx="252" cy="368" r="15"/>
+              <circle cx="294" cy="368" r="15"/>
+            </g>
+            <g fill="none" stroke="#0A1F44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="#i-grupo" x="202" y="360" width="16" height="16"/>
+              <use href="#i-ecra" x="244" y="360" width="16" height="16"/>
+              <use href="#i-mensagem" x="286" y="360" width="16" height="16"/>
+            </g>
+            <rect x="320" y="354" width="44" height="28" rx="14" fill="#D92D20"/>
+            <use href="#i-telefone" x="334" y="360" width="16" height="16" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(135 342 368)"/>
+          </svg>
+        </figure>
       </div>
     </section>
 
@@ -358,6 +390,7 @@
                 <label for="f-assunto">Assunto</label>
                 <select id="f-assunto" name="assunto">
                   <option value="Aula experimental" selected>Aula experimental</option>
+                  <option value="Aula experimental online">Aula experimental online</option>
                   <option value="Inscrição nas aulas presenciais">Inscrição nas aulas presenciais</option>
                   <option value="Explicações regulares">Explicações regulares</option>
                   <option value="Preparação para exame">Preparação para exame</option>
@@ -443,7 +476,7 @@
         <p class="rodape__titulo">Navegação</p>
         <ul class="rodape__lista">
           <li><a href="#aulas-presenciais">Aulas presenciais</a></li>
-          <li><a href="#explicacoes">Explicações</a></li>
+          <li><a href="#aulas-online">Aulas online</a></li>
           <li><a href="#exames">Preparação para exames</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>

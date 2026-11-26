@@ -655,8 +655,7 @@ a:hover {
 }
 
 @media (min-width: 640px) {
-  .grelha--2,
-  .grelha--4 {
+  .grelha--2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -667,12 +666,6 @@ a:hover {
   }
 }
 
-@media (min-width: 1080px) {
-  .grelha--4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .cartao {
   padding: 1.5rem;
   background: var(--branco);
@@ -680,29 +673,32 @@ a:hover {
   border-radius: var(--raio);
 }
 
-/* ---------- 2. Aulas presenciais ---------- */
-.presenciais {
+/* ---------- 2. e 3. Aulas presenciais e aulas online ---------- */
+/* As duas secções têm a mesma estrutura: texto com lista e botão, ao lado de uma imagem */
+
+/* Linha fina no topo, para separar a secção da entrada (as duas têm fundo branco) */
+.seccao--linha {
   border-top: 1px solid var(--linha);
 }
 
-.presenciais__grelha {
+.aulas__grelha {
   display: grid;
   gap: 2.5rem;
   align-items: center;
 }
 
-.presenciais__texto h2 {
+.aulas__texto h2 {
   margin-bottom: 1.5rem;
 }
 
-.presenciais__lista {
+.aulas__lista {
   margin: 0 0 2rem;
   padding: 0;
   list-style: none;
   border-top: 1px solid var(--linha);
 }
 
-.presenciais__lista li {
+.aulas__lista li {
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -714,7 +710,7 @@ a:hover {
   color: var(--noite);
 }
 
-.presenciais__marca {
+.aulas__marca {
   display: grid;
   place-items: center;
   flex: none;
@@ -725,18 +721,18 @@ a:hover {
   color: var(--azul);
 }
 
-.presenciais__marca .icone {
+.aulas__marca .icone {
   width: 18px;
   height: 18px;
   stroke-width: 2.5;
 }
 
-.presenciais__texto .botao {
+.aulas__texto .botao {
   width: 100%;
 }
 
-/* A fotografia aparece primeiro no telemóvel e à esquerda no computador */
-.presenciais__foto {
+/* A imagem aparece primeiro no telemóvel; no computador fica ao lado do texto */
+.aulas__imagem {
   order: -1;
   justify-self: center;
   width: 100%;
@@ -747,121 +743,42 @@ a:hover {
   box-shadow: var(--sombra);
 }
 
-.presenciais__foto img {
+.aulas__imagem > img,
+.aulas__imagem > svg {
   width: 100%;
+  height: auto;
+}
+
+/* Ilustração das aulas online: cartão branco com contorno, como uma janela */
+.aulas__imagem--ilustracao {
+  background: var(--branco);
+  border: 1px solid var(--linha);
 }
 
 @media (min-width: 560px) {
-  .presenciais__texto .botao {
+  .aulas__texto .botao {
     width: auto;
     min-width: 200px;
   }
 }
 
 @media (min-width: 960px) {
-  .presenciais__grelha {
+  .aulas__grelha {
     grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
     gap: 4.5rem;
   }
 
-  .presenciais__foto {
+  .aulas__imagem {
     max-width: none;
   }
-}
 
-/* ---------- 3. Explicações ---------- */
-.nivel {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Faixa azul no topo de cada cartão de nível */
-.nivel::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--azul);
-}
-
-.nivel p:last-child {
-  margin: 0;
-  color: var(--ardosia);
-}
-
-.etiqueta {
-  display: inline-block;
-  margin: 0.25rem 0 0.9rem;
-  padding: 0.2rem 0.65rem;
-  border-radius: 999px;
-  background: var(--giz);
-  color: var(--azul);
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.subtitulo {
-  margin: 3.5rem 0 1.5rem;
-  font-size: 1.35rem;
-  text-align: center;
-}
-
-.formatos {
-  display: grid;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-@media (min-width: 640px) {
-  .formatos {
-    grid-template-columns: repeat(2, 1fr);
+  /* Aulas online: texto à esquerda e imagem à direita */
+  .aulas--invertida .aulas__grelha {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
   }
-}
 
-@media (min-width: 1080px) {
-  .formatos {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.formato {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.25rem;
-  background: var(--branco);
-  border: 1px solid var(--linha);
-  border-radius: var(--raio);
-}
-
-.formato__icone {
-  display: grid;
-  place-items: center;
-  flex: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--giz);
-  color: var(--azul);
-}
-
-.formato h4 {
-  margin: 0 0 0.25rem;
-}
-
-.formato p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--ardosia);
-}
-
-@media (min-width: 1080px) {
-  .formato {
-    flex-direction: column;
+  .aulas--invertida .aulas__imagem {
+    order: 0;
   }
 }
 

@@ -65,6 +65,7 @@ O link do Facebook já é o da página atual.
 
 - **Logótipo** (`img/logo.png`): substituir o ficheiro por outro com o mesmo nome. Idealmente, PNG com fundo transparente e cerca de 600 px de largura. Se a proporção do novo logótipo for diferente, atualizar também `width` e `height` dessa imagem no `index.html`.
 - **Fotografia da sala** (`img/sala-aulas-presenciais.jpg`): substituir o ficheiro por outro com o mesmo nome, vertical e com a proporção 3 × 4 (por exemplo 1200 × 1600 px). Se a proporção for diferente, atualizar também `width` e `height` dessa imagem no `index.html`.
+- **Ilustração das aulas online**: está desenhada diretamente no `index.html` (bloco `<svg>` da secção Aulas Online), por isso não tem ficheiro em `img/`. Para pôr uma fotografia no lugar dela, seguir as instruções do comentário que está por cima desse bloco.
 - **Símbolo do menu e ícones do separador**: substituir `img/simbolo.svg`, `img/favicon.svg`, `img/favicon-32.png` (32 × 32 px) e `img/apple-touch-icon.png` (180 × 180 px, fundo branco).
 - **Imagem de partilha** (`img/og-image.png`): manter 1200 × 630 px e o conteúdo importante ao centro, porque o WhatsApp às vezes corta as laterais.
 - **Fotografias novas**: guardar em `img/`, reduzir antes para no máximo 1600 px de largura e comprimir, por exemplo em [squoosh.app](https://squoosh.app) (formato WebP ou JPG). Escrever sempre um texto `alt` que descreva a imagem, por exemplo `alt="Aluno a resolver um exercício no quadro"`.
