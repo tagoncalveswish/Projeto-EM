@@ -82,14 +82,6 @@ O formulário envia os pedidos para o seu email através do [Formspree](https://
 
 O plano gratuito tem um limite de envios por mês (consultar no site do Formspree). Enquanto o formulário não estiver configurado, o site mostra uma mensagem a sugerir o WhatsApp ou o email.
 
-## Mapa
-
-O mapa mostra a região do Algarve. Para mostrar a morada exata:
-
-1. No Google Maps, procurar a morada e carregar em **Partilhar → Incorporar um mapa → Copiar HTML**.
-2. Do código copiado, ficar só com o endereço que está dentro de `src="..."`.
-3. No `index.html`, colá-lo no `src` do `<iframe>` do mapa (está assinalado com `EDITAR`).
-
 ## Avaliações
 
 As três avaliações são **exemplos** e estão marcadas como tal no site. Devem ser substituídas por avaliações reais, com autorização de quem os escreveu (no caso de menores, dos encarregados de educação). Depois, apagar as etiquetas "Exemplo" e o aviso por baixo do título da secção.
@@ -157,4 +149,4 @@ O site atualiza-se sozinho um a dois minutos depois.
 ## Privacidade
 
 - O formulário recolhe dados pessoais (nome, email e telefone). Só devem ser usados para responder ao pedido, como diz a caixa de consentimento.
-- O site carrega os tipos de letra do Google Fonts e o mapa do Google Maps, que comunicam com servidores da Google. Antes de divulgar o site, vale a pena acrescentar uma página de política de privacidade.
+- O site carrega os tipos de letra do Google Fonts, que comunicam com servidores da Google. Antes de divulgar o site, vale a pena acrescentar uma página de política de privacidade.

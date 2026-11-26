@@ -375,27 +375,15 @@
                 <input id="f-nome" name="nome" type="text" autocomplete="name" required>
               </div>
               <div class="campo">
-                <label for="f-telefone">Telefone <span class="opcional">(opcional)</span></label>
-                <input id="f-telefone" name="telefone" type="tel" autocomplete="tel">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required>
               </div>
-            </div>
-
-            <div class="campo">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" required>
             </div>
 
             <div class="campos-2">
               <div class="campo">
-                <label for="f-assunto">Assunto</label>
-                <select id="f-assunto" name="assunto">
-                  <option value="Aula experimental" selected>Aula experimental</option>
-                  <option value="Aula experimental online">Aula experimental online</option>
-                  <option value="Inscrição nas aulas presenciais">Inscrição nas aulas presenciais</option>
-                  <option value="Explicações regulares">Explicações regulares</option>
-                  <option value="Preparação para exame">Preparação para exame</option>
-                  <option value="Outro assunto">Outro assunto</option>
-                </select>
+                <label for="f-telefone">Telefone <span class="opcional">(opcional)</span></label>
+                <input id="f-telefone" name="telefone" type="tel" autocomplete="tel">
               </div>
               <div class="campo">
                 <label for="f-ano">Ano de escolaridade</label>
@@ -413,53 +401,47 @@
             </div>
 
             <div class="campo">
+              <label for="f-assunto">Assunto</label>
+              <select id="f-assunto" name="assunto">
+                <option value="Aula experimental" selected>Aula experimental</option>
+                <option value="Aula experimental online">Aula experimental online</option>
+                <option value="Inscrição nas aulas presenciais">Inscrição nas aulas presenciais</option>
+                <option value="Explicações regulares">Explicações regulares</option>
+                <option value="Preparação para exame">Preparação para exame</option>
+                <option value="Outro assunto">Outro assunto</option>
+              </select>
+            </div>
+
+            <div class="campo">
               <label for="f-mensagem">Mensagem</label>
               <textarea id="f-mensagem" name="mensagem" rows="5" placeholder="Por exemplo: disciplina, principais dificuldades, horários preferidos…"></textarea>
             </div>
 
-            <div class="campo campo--check">
-              <input id="f-consentimento" name="consentimento" type="checkbox" value="Sim" required>
-              <label for="f-consentimento">Aceito que os meus dados sejam usados apenas para responder a este pedido.</label>
+            <div class="formulario__rodape">
+              <div class="campo campo--check">
+                <input id="f-consentimento" name="consentimento" type="checkbox" value="Sim" required>
+                <label for="f-consentimento">Aceito que os meus dados sejam usados apenas para responder a este pedido.</label>
+              </div>
+              <button class="botao" type="submit">Enviar pedido</button>
             </div>
-
-            <button class="botao botao--largo" type="submit">Enviar pedido</button>
             <p class="formulario__estado" role="status" aria-live="polite"></p>
           </form>
 
-          <div class="contacto__info">
-            <!-- EDITAR: número de WhatsApp (formato 351 + número, sem espaços nem "+") -->
-            <a class="botao botao--whatsapp botao--largo" href="https://wa.me/351XXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20explica%C3%A7%C3%B5es%20de%20Matem%C3%A1tica." target="_blank" rel="noopener">
-              <svg class="icone" aria-hidden="true"><use href="#i-mensagem"/></svg>Falar pelo WhatsApp
-            </a>
-
-            <!-- EDITAR: telefone, email e zona -->
-            <ul class="contactos">
-              <li>
-                <svg class="icone" aria-hidden="true"><use href="#i-telefone"/></svg>
-                <div><span class="contactos__rotulo">Telefone</span><a href="tel:+351XXXXXXXXX">+351 XXX XXX XXX</a></div>
-              </li>
-              <li>
-                <svg class="icone" aria-hidden="true"><use href="#i-email"/></svg>
-                <div><span class="contactos__rotulo">Email</span><a href="mailto:email@example.com">email@example.com</a></div>
-              </li>
-              <li>
-                <svg class="icone" aria-hidden="true"><use href="#i-local"/></svg>
-                <div><span class="contactos__rotulo">Onde</span><strong>Algarve · aulas presenciais e online</strong></div>
-              </li>
-            </ul>
-
-            <!-- EDITAR: links das redes sociais -->
-            <div class="redes">
-              <a href="https://www.facebook.com/explicacoes.matematica.armacao.de.pera.e.online" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a>
-              <a href="https://www.instagram.com/SUBSTITUIR" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram</a>
-            </div>
-
-            <!-- EDITAR: mapa. Para mostrar a morada exata: Google Maps → Partilhar → Incorporar um mapa,
-                 e copiar para aqui o endereço que aparece dentro de src="..." -->
-            <div class="mapa">
-              <iframe src="https://maps.google.com/maps?q=Algarve%2C%20Portugal&amp;z=9&amp;output=embed" title="Mapa da região do Algarve" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-            </div>
-          </div>
+          <!-- EDITAR: telefone, email e zona -->
+          <ul class="contactos">
+            <li>
+              <svg class="icone" aria-hidden="true"><use href="#i-telefone"/></svg>
+              <div><span class="contactos__rotulo">Telefone</span><a href="tel:+351XXXXXXXXX">+351 XXX XXX XXX</a></div>
+            </li>
+            <li>
+              <svg class="icone" aria-hidden="true"><use href="#i-email"/></svg>
+              <div><span class="contactos__rotulo">Email</span><a href="mailto:email@example.com">email@example.com</a></div>
+            </li>
+            <li>
+              <svg class="icone" aria-hidden="true"><use href="#i-local"/></svg>
+              <div><span class="contactos__rotulo">Onde</span><strong>Algarve · aulas presenciais e online</strong></div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
