@@ -87,9 +87,9 @@ O mapa mostra a região do Algarve. Para mostrar a morada exata:
 2. Do código copiado, ficar só com o endereço que está dentro de `src="..."`.
 3. No `index.html`, colá-lo no `src` do `<iframe>` do mapa (está assinalado com `EDITAR`).
 
-## Testemunhos
+## Avaliações
 
-Os três testemunhos são **exemplos** e estão marcados como tal no site. Devem ser substituídos por testemunhos reais, com autorização de quem os escreveu (no caso de menores, dos encarregados de educação). Depois, apagar as etiquetas "Exemplo" e o aviso por baixo do título da secção.
+As três avaliações são **exemplos** e estão marcadas como tal no site. Devem ser substituídas por avaliações reais, com autorização de quem os escreveu (no caso de menores, dos encarregados de educação). Depois, apagar as etiquetas "Exemplo" e o aviso por baixo do título da secção.
 
 ## Cores e tipos de letra
 
