@@ -12,6 +12,7 @@ Foi feito só com HTML, CSS e JavaScript simples, sem frameworks nem passos de c
 | `css/style.css` | Aspeto do site: cores, tipos de letra, espaçamentos e adaptação ao telemóvel. |
 | `js/main.js` | Menu "hambúrguer", envio do formulário e ano no rodapé. Não é preciso editar. |
 | `img/logo.png` | Logótipo (aparece na entrada do site). |
+| `img/sala-aulas-presenciais.jpg` | Fotografia da sala (secção Aulas Presenciais). |
 | `img/simbolo.svg` | Símbolo da pirâmide no menu. |
 | `img/favicon.svg`, `img/favicon-32.png` | Ícone do separador do browser. |
 | `img/apple-touch-icon.png` | Ícone quando o site é adicionado ao ecrã principal do iPhone. |
@@ -63,6 +64,7 @@ O link do Facebook já é o da página atual.
 ## Trocar imagens
 
 - **Logótipo** (`img/logo.png`): substituir o ficheiro por outro com o mesmo nome. Idealmente, PNG com fundo transparente e cerca de 600 px de largura. Se a proporção do novo logótipo for diferente, atualizar também `width` e `height` dessa imagem no `index.html`.
+- **Fotografia da sala** (`img/sala-aulas-presenciais.jpg`): substituir o ficheiro por outro com o mesmo nome, vertical e com a proporção 3 × 4 (por exemplo 1200 × 1600 px). Se a proporção for diferente, atualizar também `width` e `height` dessa imagem no `index.html`.
 - **Símbolo do menu e ícones do separador**: substituir `img/simbolo.svg`, `img/favicon.svg`, `img/favicon-32.png` (32 × 32 px) e `img/apple-touch-icon.png` (180 × 180 px, fundo branco).
 - **Imagem de partilha** (`img/og-image.png`): manter 1200 × 630 px e o conteúdo importante ao centro, porque o WhatsApp às vezes corta as laterais.
 - **Fotografias novas**: guardar em `img/`, reduzir antes para no máximo 1600 px de largura e comprimir, por exemplo em [squoosh.app](https://squoosh.app) (formato WebP ou JPG). Escrever sempre um texto `alt` que descreva a imagem, por exemplo `alt="Aluno a resolver um exercício no quadro"`.

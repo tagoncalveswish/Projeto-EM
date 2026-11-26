@@ -99,6 +99,7 @@
       <nav class="navegacao" aria-label="Menu principal">
         <ul class="menu" id="menu">
           <li><a href="#inicio">Início</a></li>
+          <li><a href="#aulas-presenciais">Aulas Presenciais</a></li>
           <li><a href="#explicacoes">Explicações</a></li>
           <li><a href="#exames">Exames</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
@@ -144,7 +145,31 @@
       </div>
     </section>
 
-    <!-- ===================== 2. EXPLICAÇÕES ===================== -->
+    <!-- ===================== 2. AULAS PRESENCIAIS ===================== -->
+    <section class="seccao presenciais" id="aulas-presenciais" aria-labelledby="presenciais-titulo">
+      <div class="contentor presenciais__grelha">
+        <div class="presenciais__texto">
+          <!-- EDITAR: textos das aulas presenciais -->
+          <p class="sobretitulo">Aulas presenciais</p>
+          <h2 id="presenciais-titulo">Aulas de Matemática Presenciais em Silves, Faro</h2>
+          <ul class="presenciais__lista">
+            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Grupos pequenos de alunos</li>
+            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Preparação para testes e exames</li>
+            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Ensino Básico: 7.º ao 9.º ano</li>
+            <li><span class="presenciais__marca"><svg class="icone" aria-hidden="true"><use href="#i-check"/></svg></span>Ensino Secundário: 10.º ao 12.º ano (Matemática A e MACS)</li>
+          </ul>
+          <a class="botao" href="#contacto" data-assunto="Inscrição nas aulas presenciais">Inscrever</a>
+        </div>
+
+        <figure class="presenciais__foto">
+          <!-- EDITAR: fotografia da sala. Para trocar, substituir img/sala-aulas-presenciais.jpg
+               por outra fotografia vertical (proporção 3 × 4) com o mesmo nome. -->
+          <img src="img/sala-aulas-presenciais.jpg" alt="Sala de aulas da easy mat, com mesas brancas, cadeiras azuis, quadro branco e um televisor com o anúncio das explicações de Matemática" width="1200" height="1600" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== 3. EXPLICAÇÕES ===================== -->
     <section class="seccao seccao--clara" id="explicacoes" aria-labelledby="explicacoes-titulo">
       <div class="contentor">
         <header class="seccao__cabecalho">
@@ -213,7 +238,7 @@
       </div>
     </section>
 
-    <!-- ===================== 3. PREPARAÇÃO PARA EXAMES ===================== -->
+    <!-- ===================== 4. PREPARAÇÃO PARA EXAMES ===================== -->
     <section class="seccao seccao--escura" id="exames" aria-labelledby="exames-titulo">
       <div class="contentor">
         <header class="seccao__cabecalho">
@@ -251,7 +276,7 @@
       </div>
     </section>
 
-    <!-- ===================== 4. AVALIAÇÕES ===================== -->
+    <!-- ===================== 5. AVALIAÇÕES ===================== -->
     <section class="seccao seccao--clara" id="avaliacoes" aria-labelledby="avaliacoes-titulo">
       <div class="contentor">
         <header class="seccao__cabecalho">
@@ -291,7 +316,7 @@
       </div>
     </section>
 
-    <!-- ===================== 5. CONTACTO ===================== -->
+    <!-- ===================== 6. CONTACTO ===================== -->
     <section class="seccao" id="contacto" aria-labelledby="contacto-titulo">
       <div class="contentor">
         <header class="seccao__cabecalho">
@@ -333,6 +358,7 @@
                 <label for="f-assunto">Assunto</label>
                 <select id="f-assunto" name="assunto">
                   <option value="Aula experimental" selected>Aula experimental</option>
+                  <option value="Inscrição nas aulas presenciais">Inscrição nas aulas presenciais</option>
                   <option value="Explicações regulares">Explicações regulares</option>
                   <option value="Preparação para exame">Preparação para exame</option>
                   <option value="Outro assunto">Outro assunto</option>
@@ -416,6 +442,7 @@
       <nav aria-label="Rodapé">
         <p class="rodape__titulo">Navegação</p>
         <ul class="rodape__lista">
+          <li><a href="#aulas-presenciais">Aulas presenciais</a></li>
           <li><a href="#explicacoes">Explicações</a></li>
           <li><a href="#exames">Preparação para exames</a></li>
           <li><a href="#contacto">Contacto</a></li>

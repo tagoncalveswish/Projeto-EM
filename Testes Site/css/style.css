@@ -680,7 +680,96 @@ a:hover {
   border-radius: var(--raio);
 }
 
-/* ---------- 2. Explicações ---------- */
+/* ---------- 2. Aulas presenciais ---------- */
+.presenciais {
+  border-top: 1px solid var(--linha);
+}
+
+.presenciais__grelha {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.presenciais__texto h2 {
+  margin-bottom: 1.5rem;
+}
+
+.presenciais__lista {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--linha);
+}
+
+.presenciais__lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--linha);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--noite);
+}
+
+.presenciais__marca {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--giz);
+  color: var(--azul);
+}
+
+.presenciais__marca .icone {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.5;
+}
+
+.presenciais__texto .botao {
+  width: 100%;
+}
+
+/* A fotografia aparece primeiro no telemóvel e à esquerda no computador */
+.presenciais__foto {
+  order: -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 480px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.presenciais__foto img {
+  width: 100%;
+}
+
+@media (min-width: 560px) {
+  .presenciais__texto .botao {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .presenciais__grelha {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 4.5rem;
+  }
+
+  .presenciais__foto {
+    max-width: none;
+  }
+}
+
+/* ---------- 3. Explicações ---------- */
 .nivel {
   position: relative;
   overflow: hidden;
@@ -776,7 +865,7 @@ a:hover {
   }
 }
 
-/* ---------- 3. Exames ---------- */
+/* ---------- 4. Exames ---------- */
 .exame {
   position: relative;
   display: flex;
@@ -854,7 +943,7 @@ a:hover {
   }
 }
 
-/* ---------- 4. Avaliações ---------- */
+/* ---------- 5. Avaliações ---------- */
 .testemunho {
   display: flex;
   flex-direction: column;
@@ -901,7 +990,7 @@ a:hover {
   color: var(--ardosia);
 }
 
-/* ---------- 5. Contacto ---------- */
+/* ---------- 6. Contacto ---------- */
 .contacto {
   display: grid;
   gap: 2rem;
