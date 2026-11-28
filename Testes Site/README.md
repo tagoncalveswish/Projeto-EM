@@ -86,7 +86,7 @@ O plano gratuito tem um limite de envios por mês (consultar no site do Formspre
 
 ## Avaliações
 
-As três avaliações são **exemplos** e estão marcadas como tal no site. Devem ser substituídas por avaliações reais, com autorização de quem os escreveu (no caso de menores, dos encarregados de educação). Depois, apagar as etiquetas "Exemplo" e o aviso por baixo do título da secção.
+As três avaliações são **exemplos** e estão marcadas como tal no site. Devem ser substituídas por avaliações reais, com autorização de quem os escreveu (no caso de menores, dos encarregados de educação). Depois, apagar as etiquetas "Exemplo" e, se for preciso, ajustar o texto por baixo do título da secção.
 
 ## Cores e tipos de letra
 
