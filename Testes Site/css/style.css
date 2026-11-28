@@ -294,7 +294,7 @@ a:hover {
 }
 
 .marca__nome {
-  width: 80px;
+  width: 68px;
 }
 
 @media (min-width: 400px) {
@@ -311,7 +311,7 @@ a:hover {
   }
 
   .marca__nome {
-    width: 108px;
+    width: 92px;
   }
 }
 
