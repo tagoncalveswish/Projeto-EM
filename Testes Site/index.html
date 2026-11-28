@@ -92,8 +92,9 @@
   <header class="cabecalho">
     <div class="contentor cabecalho__barra">
       <a class="marca" href="#inicio">
-        <!-- Símbolo da marca (img/simbolo.svg) -->
-        <img src="img/simbolo.svg" alt="easy mat — início" width="43" height="40">
+        <!-- Símbolo da marca (img/simbolo.svg) e, à direita, o nome "easy mat" do logótipo (img/nome.svg) -->
+        <img class="marca__simbolo" src="img/simbolo.svg" alt="easy mat — início" width="43" height="40">
+        <img class="marca__nome" src="img/nome.svg" alt="" width="435" height="84">
       </a>
 
       <nav class="navegacao" aria-label="Menu principal">
@@ -101,6 +102,7 @@
           <li><a href="#inicio">Início</a></li>
           <li><a href="#aulas-presenciais">Aulas Presenciais</a></li>
           <li><a href="#aulas-online">Aulas Online</a></li>
+          <li><a href="#sobre-nos">Sobre Nós</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -185,14 +187,20 @@
 
         <figure class="aulas__imagem aulas__imagem--ilustracao">
           <!-- Ilustração de uma aula online, desenhada aqui mesmo (não é preciso editar).
-               Para pôr uma fotografia no lugar dela, guardar a foto em img/, apagar todo o bloco <svg> … </svg>
+               Usa duas imagens da pasta img/: o logótipo (img/logo.png) no vídeo do explicador e
+               a fotografia img/aulas-online-aluno.jpg no vídeo do aluno (608 × 496 px).
+               Fotografia do aluno: João Valverde, no Pexels (licença gratuita, pexels.com/photo/14466702).
+               Para pôr uma fotografia no lugar da ilustração toda, guardar a foto em img/, apagar todo o bloco <svg> … </svg>
                e escrever no lugar dele, por exemplo:
                <img src="img/aulas-online.jpg" alt="Descrição da fotografia" width="1200" height="850" loading="lazy"> -->
-          <svg viewBox="0 0 560 396" width="560" height="396" role="img" aria-label="Ilustração de uma aula online: quadro partilhado com o gráfico de uma função e o vídeo do explicador e do aluno">
+          <svg viewBox="0 0 560 396" width="560" height="396" role="img" aria-label="Ilustração de uma aula online: quadro partilhado com o gráfico de uma função, o vídeo do explicador com o logótipo da easy mat e o vídeo de um aluno a sorrir para a câmara">
             <defs>
               <pattern id="quadricula-online" width="20" height="20" patternUnits="userSpaceOnUse">
                 <path d="M20 0H0V20" fill="none" stroke="#E8EEF6"/>
               </pattern>
+              <clipPath id="video-aluno">
+                <rect x="392" y="200" width="152" height="124" rx="10"/>
+              </clipPath>
             </defs>
 
             <!-- Janela da videochamada -->
@@ -236,14 +244,13 @@
               <text x="282" y="242" font-size="13">V(3, −1)</text>
             </g>
 
-            <!-- Vídeos do explicador (a falar) e do aluno -->
-            <rect x="392" y="64" width="152" height="124" rx="10" fill="#DCE7FA"/>
-            <circle cx="468" cy="116" r="18" fill="#7FA3E6"/>
-            <path d="M430 188c0-28 17-46 38-46s38 18 38 46z" fill="#7FA3E6"/>
+            <!-- Vídeos do explicador (a falar, com o logótipo da easy mat em fundo branco) e do aluno (fotografia) -->
+            <rect x="392" y="64" width="152" height="124" rx="10" fill="#FFFFFF"/>
+            <image href="img/logo.png" x="434" y="72" width="68" height="77" preserveAspectRatio="xMidYMid meet"/>
             <rect x="393.25" y="65.25" width="149.5" height="121.5" rx="8.75" fill="none" stroke="#0049AF" stroke-width="2.5"/>
             <rect x="392" y="200" width="152" height="124" rx="10" fill="#EEF2F8"/>
-            <circle cx="468" cy="252" r="18" fill="#B5BFCE"/>
-            <path d="M430 324c0-28 17-46 38-46s38 18 38 46z" fill="#B5BFCE"/>
+            <image href="img/aulas-online-aluno.jpg" x="392" y="200" width="152" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#video-aluno)"/>
+            <rect x="392.5" y="200.5" width="151" height="123" rx="9.5" fill="none" stroke="#DCE3EE"/>
             <g font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#FFFFFF">
               <rect x="400" y="160" width="72" height="20" rx="10" fill="#0A1F44" fill-opacity="0.75"/>
               <text x="409" y="174">Explicador</text>
@@ -269,8 +276,26 @@
       </div>
     </section>
 
-    <!-- ===================== 4. AVALIAÇÕES ===================== -->
-    <section class="seccao seccao--escura" id="avaliacoes" aria-labelledby="avaliacoes-titulo">
+    <!-- ===================== 4. SOBRE NÓS ===================== -->
+    <section class="seccao seccao--escura" id="sobre-nos" aria-labelledby="sobre-titulo">
+      <div class="contentor sobre__grelha">
+        <!-- EDITAR: textos da secção Sobre Nós -->
+        <div class="sobre__titulo">
+          <p class="sobretitulo">Sobre Nós</p>
+          <h2 id="sobre-titulo">A Easy Mat é especialista no ensino de matemática para alunos de ensino básico e secundário em Portugal.</h2>
+        </div>
+
+        <div class="sobre__texto">
+          <p>Com <strong>mais de 15 anos de experiência</strong> no ensino de matemática combinamos métodos de ensino tradicionais eficazes com métodos mais modernos e tecnológicos.</p>
+          <p>Preparamos o aluno para o ensino atual e do futuro.</p>
+          <p>Entra em contacto connosco para saber mais sobre a Easy Mat e como podemos ajudar um aluno a melhorar bastante o aproveitamento a matemática.</p>
+          <a class="botao botao--claro" href="#contacto">Fale connosco</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. AVALIAÇÕES ===================== -->
+    <section class="seccao seccao--clara" id="avaliacoes" aria-labelledby="avaliacoes-titulo">
       <div class="contentor">
         <header class="seccao__cabecalho">
           <p class="sobretitulo">Avaliações</p>
@@ -309,7 +334,7 @@
       </div>
     </section>
 
-    <!-- ===================== 5. CONTACTO ===================== -->
+    <!-- ===================== 6. CONTACTO ===================== -->
     <section class="seccao seccao--quadriculado" id="contacto" aria-labelledby="contacto-titulo">
       <div class="contentor">
         <header class="seccao__cabecalho">
@@ -422,6 +447,7 @@
         <ul class="rodape__lista">
           <li><a href="#aulas-presenciais">Aulas presenciais</a></li>
           <li><a href="#aulas-online">Aulas online</a></li>
+          <li><a href="#sobre-nos">Sobre nós</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
