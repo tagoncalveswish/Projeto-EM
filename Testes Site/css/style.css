@@ -315,6 +315,52 @@ a:hover {
   }
 }
 
+/* Ícones do Facebook e do Instagram, à direita do nome, separados por uma linha fina.
+   Só aparecem a partir de 480 px: nos telemóveis estreitos não cabem na barra (estão no rodapé) */
+.redes {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.redes a {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--linha);
+  border-radius: 50%;
+  color: var(--noite);
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.redes a:hover {
+  border-color: var(--azul);
+  background: var(--giz);
+  color: var(--azul);
+}
+
+.redes .icone {
+  width: 17px;
+  height: 17px;
+}
+
+@media (min-width: 480px) {
+  .marca {
+    margin-right: 0;
+  }
+
+  .redes {
+    display: flex;
+    margin-right: auto;
+    padding-left: 0.9rem;
+    border-left: 1px solid var(--linha);
+  }
+}
+
 /* Sem JavaScript, o menu aparece numa linha por baixo do símbolo */
 .navegacao {
   order: 3;
@@ -423,9 +469,9 @@ a:hover {
   }
 }
 
-/* O menu completo só aparece a partir de 1100 px: com o nome "easy mat" e 6 separadores,
-   abaixo disso não cabe numa linha e fica o menu "hambúrguer" */
-@media (min-width: 1100px) {
+/* O menu completo só aparece a partir de 1140 px: com o nome "easy mat", os ícones das redes
+   e 6 separadores, abaixo disso não cabe numa linha e fica o menu "hambúrguer" */
+@media (min-width: 1140px) {
   .navegacao,
   .js .navegacao {
     display: block;

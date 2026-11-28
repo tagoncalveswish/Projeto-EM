@@ -49,7 +49,7 @@
     });
 
     // Fecha se o ecrã passar a ter largura de computador (a mesma do menu completo no style.css)
-    var ecraLargo = window.matchMedia('(min-width: 1100px)');
+    var ecraLargo = window.matchMedia('(min-width: 1140px)');
     var aoMudarLargura = function (consulta) {
       if (consulta.matches) {
         definirMenu(false);
